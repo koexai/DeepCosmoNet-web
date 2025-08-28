@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ASTRAI Resource Hub</title>
-  <meta name="description" content="ASTRAI Resource Hub: datasets, source code, publications, and citation/licensing." />
+  <title>DeepCosmoNet Resource Hub</title>
+  <meta name="description" content="DeepCosmoNet Resource Hub: datasets, source code, publications, and citation/licensing." />
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body class="with-fixed-header resources-page">
@@ -12,7 +12,7 @@
     <header>
       <div class="container">
         <div class="header-content">
-          <a class="logo" href="/">ASTRAI</a>
+          <a class="logo" href="/">DeepCosmoNet</a>
           <nav aria-label="Primary">
             <a href="/#about">About</a>
             <a href="/#project">Project</a>
@@ -26,9 +26,9 @@
 
 
   <main class="container resources-page">
-    <h1>ASTRAI Resource Hub</h1>
+    <h1>DeepCosmoNet Resource Hub</h1>
     <p class="lede">
-      Welcome to the ASTRAI Resource Hub. Here you’ll find <strong>datasets</strong> (physical models, real observations, and GenAI simulations),
+      Welcome to the DeepCosmoNet Resource Hub. Here you’ll find <strong>datasets</strong> (N-body Simulation Sample, Sub-halo Catalogue, and Void Catalogue),
       <strong>source code</strong>, and <strong>publications</strong> produced by the project. Each release aims to be <em>FAIR</em>—findable,
       accessible, interoperable, and reusable—so you can reproduce results, benchmark your own methods, and build on this work responsibly.
     </p>
@@ -46,27 +46,28 @@
       <ul>
         <li><a href="#datasets">Datasets</a>
           <ul>
-            <li><a href="#A">A. Physical Simulations</a>
+            <li><a href="#A">A. N-body simulation dataset</a>
               <ul>
-                <li><a href="#A1">A1. Physical models (4-parameters)</a></li>
-                <li><a href="#A2">A2. Physical models (7-parameters)</a></li>
+                <li><a href="#A1">A1. N-body simulation sample DEMNUni (1 Gpc)</a></li>
+                <li><a href="#A2">A2. N-body simulation sample DEMNUni (0.5 Gpc)</a></li>
               </ul>
             </li>
-            <li><a href="#B">B. Real Supernova Observations</a>
+            <li><a href="#B">B. Cosmological structures catalogues</a>
               <ul>
-                <li><a href="#B1">B1. Real observations</a></li>
+                <li><a href="#B1">B1. Sub-halo Catalogue</a></li>
+                <li><a href="#B2">B2. Void Catalogue</a></li>
               </ul>
             </li>
-            <li><a href="#C">C. GenAI Simulator</a>
+            <!-- <li><a href="#C">C. GenAI Simulator</a>
               <ul>
                 <li><a href="#C1">C1. Synthetic GenAI data</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </li>
         <li><a href="#code">Source Code</a>
           <ul>
-            <li><a href="#code-core">ASTRAI Core Repository</a></li>
+            <li><a href="#code-core">DeepCosmoNet Core Repository</a></li>
           </ul>
         </li>
         <li><a href="#publications">Publications</a>
@@ -92,9 +93,9 @@
     <section id="datasets" aria-labelledby="datasets-heading">
       <h2 id="datasets-heading">Datasets</h2>
         <p>
-          ASTRAI datasets are grouped into three categories: <strong>Physical Simulations</strong> (A),
-          <strong>Real Supernova Observations</strong> (B), and <strong>GenAI Simulator</strong> (C).
-          Each dataset comes with a minimal <em>open sample</em> (CSV, 5 rows) for quick inspection and the full files in compact formats (e.g. <code>.npy</code>) for research use.
+          DeepCosmoNet datasets are grouped into two categories: <strong>N-body Simulation Dataset</strong> (A), and
+          <strong>Cosmological structures catalogues</strong> (B), composed of <strong>Sub-halo catalogue</strong> and <strong>Void Catalogue</strong>.
+          Each dataset comes with a minimal <em>open sample</em> (CSV, 5 rows) for quick inspection and the full files in compact formats (e.g. <code>.csv</code>) for research use.
           FAIR artefacts (metadata, README, provenance, dictionary, and citation) are being added incrementally and are clearly marked below.
         </p>
         <p class="muted">Need the full files? See “Licence &amp; Citation” for terms and preferred citation, then follow the repository or the contact instructions where noted.</p>
@@ -103,42 +104,42 @@
       <!-- Category A -->
       <section id="A" class="category-band band-a" aria-labelledby="A-heading">
 
-        <h3 id="A-heading">A. Physical Simulations</h3>
+        <h3 id="A-heading">A. N-body Simulation Dataset</h3>
 
         <article id="A1" class="dataset frame" aria-labelledby="A1-heading">
-          <h4 id="A1-heading">A1. Physical models (4-parameters)</h4>
-            <p><strong>Overview.</strong> Semi-analytic H-rich explosions with four core parameters controlling energy, radius, ejecta mass, and radioactive contribution.
-            The release includes time-dependent observables (multi-band light curves, temperature, photospheric velocity) plus generation metadata.</p>
-            <p class="muted">Intended use: parameter-recovery benchmarks, uncertainty calibration, and sanity checks against semi-analytic expectations.</p>
+          <h4 id="A1-heading">A1. N-body simulation sample DEMNUni (1 Gpc)</h4>
+            <p><strong>Overview.</strong> DEMNUni simulations are a suite of large-scale N-body cosmological simulations, this is a sample from a simulation with a box side length of 1 Gpc, that investigate the clustering of cosmic structures specifically in the presence of massive neutrinos. The particle data from these simulations typically includes the following columns: 
+x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velocities), and mass.</p>
+            <p class="muted">Intended use: training and validation of our pipeline.</p>
 
           <h5 class="visually-hidden">Primary files</h5>
             <div class="file-strip" aria-label="Primary files">
               <div class="file-item">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
-                <a href="/resources/datasets/A1/lightcurves_4param.npy" download class="name">lightcurves_4param.npy</a>
-                <span class="meta">· 152&nbsp;MB</span>
+                <a href="/resources/datasets/samples/sample.csv" download class="name">Sample_DEMNUni (1 Gpc)</a>
+                <span class="meta">· 91&nbsp;MB</span>
                 <a class="hash" href="/resources/datasets/A1/checksums.txt">SHA-256</a>
               </div>
 
-              <div class="file-item">
+              <!-- <div class="file-item">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
-                <a href="/resources/datasets/A1/params_4param.npy" download class="name">params_4param.npy</a>
+                <a href="/resources/datasets/samples/sample.csv" download class="name">params_4param.npy</a>
                 <span class="meta">· 9.4&nbsp;MB</span>
                 <a class="hash" href="/resources/datasets/A1/checksums.txt">SHA-256</a>
-              </div>
+              </div> -->
             </div>
             <p class="muted">Last updated: 2025-08-23</p>
 
 
           <h5>Preview (CSV)</h5>
-          <p class="muted">First 5 rows from a tiny sample file for curves; the full dataset is available via the .npy download above.</p>
-          <div class="table-scroll" data-sample-url="/resources/datasets/samples/A1_curves_sample.csv" data-max-cols="10" role="region" aria-label="A1 sample curve table" tabindex="0">
+          <p class="muted">First 5 rows from a spatial subset of our Dataset; the full subset is available via the .csv download above.</p>
+          <div class="table-scroll" data-sample-url="/resources/datasets/samples/sample.csv" data-max-cols="10" role="region" aria-label="A1 sample curve table" tabindex="0">
             <em>Loading preview…</em>
           </div>
-          <p class="muted">First 5 rows from a tiny sample file for parameters; the full dataset is available via the .npy download above.</p>
-          <div class="table-scroll" data-sample-url="/resources/datasets/samples/A1_params_sample.csv" data-max-cols="10" role="region" aria-label="A1 sample parameter table" tabindex="0">
+          <!-- <p class="muted">First 5 rows from a tiny sample file for parameters; the full dataset is available via the .npy download above.</p>
+          <div class="table-scroll" data-sample-url="/resources/datasets/samples/sample.csv" data-max-cols="10" role="region" aria-label="A1 sample parameter table" tabindex="0">
             <em>Loading preview…</em>
-          </div>
+          </div> -->
 
           <h5>FAIR artefacts (status)</h5>
             <p class="fair-note">We’re progressively adding the artefacts below; items marked “Coming soon” will appear in the next releases.</p>
@@ -203,25 +204,25 @@
         </article>
 
         <article id="A2" class="dataset frame" aria-labelledby="A2-heading">
-          <h4 id="A2-heading">A2. Physical models (7-parameters)</h4>
-            <p><strong>Overview.</strong> An expanded physical grid with seven parameters to capture a broader range of progenitor and CSM scenarios.
-            Useful for ablation studies and robustness tests when moving from compact to richer physical descriptions.</p>
-            <p class="muted">Intended use: stress-testing model generalisation and examining parameter identifiability under increased realism.</p>
+          <h4 id="A2-heading">A2. N-body simulation sample DEMNUni (0.5 Gpc) </h4>
+            <p><strong>Overview.</strong> DEMNUni simulations are a suite of large-scale N-body cosmological simulations, this is a sample from a simulation with a box side length of 0.5 Gpc, that investigate the clustering of cosmic structures specifically in the presence of massive neutrinos. The particle data from these simulations typically includes the following columns: 
+x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velocities), and mass.</p>
+            <p class="muted">Intended use: training and validation of our pipeline.</p>
 
           <h5 class="visually-hidden">Primary files</h5>
             <div class="file-strip" aria-label="Primary files">
               <div class="file-item">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
-                <a href="/resources/datasets/A2/lightcurves_7param.npy" download class="name">lightcurves_7param.npy</a>
+                <a href="/resources/datasets/A2/lightcurves_7param.npy" download class="name"> Sample_DEMNUni (0.5 Gpc)</a>
                 <span class="meta">· TBD</span>
                 <a class="hash" href="/resources/datasets/A2/checksums.txt">SHA-256</a>
               </div>
-              <div class="file-item">
+              <!-- <div class="file-item">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
                 <a href="/resources/datasets/A2/params_7param.npy" download class="name">params_7param.npy</a>
                 <span class="meta">· TBD</span>
                 <a class="hash" href="/resources/datasets/A2/checksums.txt">SHA-256</a>
-              </div>
+              </div> -->
             </div>
             <p class="muted">Last updated: <time datetime="2025-08-23">2025-08-23</time></p>
 
@@ -231,10 +232,10 @@
           <div class="table-scroll" data-sample-url="/resources/datasets/samples/A2_curves_sample.csv" data-max-cols="10" role="region" aria-label="A2 sample curve table" tabindex="0">
             <em>Loading preview…</em>
           </div>
-          <p class="muted">First 5 rows from a tiny sample file for parameters; the full dataset is available via the .npy download above.</p>
+          <!-- <p class="muted">First 5 rows from a tiny sample file for parameters; the full dataset is available via the .npy download above.</p>
           <div class="table-scroll" data-sample-url="/resources/datasets/samples/A2_params_sample.csv" data-max-cols="10" role="region" aria-label="A2 sample parameter table" tabindex="0">
             <em>Loading preview…</em>
-          </div>
+          </div> -->
 
 
           <h5>FAIR artefacts (status)</h5>
@@ -291,20 +292,19 @@
 
       <!-- Category B -->
       <section id="B" class="category-band band-b" aria-labelledby="B-heading">
-        <h3 id="B-heading">B. Real Supernova Observations</h3>
+        <h3 id="B-heading">B. Cosmological Structures Catalogues</h3>
 
         <article id="B1" class="dataset frame" aria-labelledby="B1-heading">
-          <h4 id="B1-heading">B1. Real observations</h4>
-            <p><strong>Overview.</strong> Curated multi-band observations with cadence, passbands, uncertainty model, and basic quality flags.
-            Where possible, records are mapped to standard naming and include minimal provenance notes.</p>
-            <p class="muted">Intended use: evaluating methods trained on synthetic data, domain shift studies, and end-to-end validation on real light curves.</p>
+          <h4 id="B1-heading">B1. Sub-halo Catalogue</h4>
+            <p><strong>Overview.</strong> This catalogue contains sub-halos identified by our pipeline from a subset of the N-body simulation.</p>
+            <p class="muted">Intended use: analyze and study the cosmic web .</p>
 
           <h5 class="visually-hidden">Primary files</h5>
             <div class="file-strip" aria-label="Primary files">
               <div class="file-item">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
-                <a href="/resources/datasets/B1/observations.npy" download class="name">observations.npy</a>
-                <span class="meta">· TBD</span>
+                <a href="/resources/datasets/samples/catalog_sample.csv" download class="name">catalog_sample.csv</a>
+                <span class="meta">· 314 KB</span>
                 <a class="hash" href="/resources/datasets/B1/checksums.txt">SHA-256</a>
               </div>
             </div>
@@ -313,7 +313,7 @@
 
           <h5>Preview (CSV)</h5>
           <p class="muted">First 5 rows from a tiny sample file.</p>
-          <div class="table-scroll" data-sample-url="/resources/datasets/samples/B1_sample.csv" data-max-cols="10" role="region" aria-label="B1 sample table" tabindex="0">
+          <div class="table-scroll" data-sample-url="/resources/datasets/samples/catalog_sample.csv" data-max-cols="10" role="region" aria-label="B1 sample table" tabindex="0">
             <em>Loading preview…</em>
           </div>
 
@@ -367,9 +367,80 @@
 
         </article>
 
+        <article id="B2" class="dataset frame" aria-labelledby="B2-heading">
+    <h4 id="B2-heading">B2. Void Catalogue</h4>
+    
+    <p><strong>Overview.</strong> This catalogue contains cosmic voids identified by our pipeline, which uses a 3D YOLO-like architecture to process voxelized data from the N-body simulation. Each entry includes the center and radius of the spherical voids, with data validated using metrics like spherical Intersection over Union (IoU).</p>
+    <p class="muted">Intended use: This resource is essential for studying large-scale cosmic structures and for comparative analysis with other detection methods.</p>
+
+    <h5 class="visually-hidden">Primary files</h5>
+    <div class="file-strip" aria-label="Primary files">
+        <div class="file-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
+            <a href="/resources/datasets/samples/sample_voids.csv" download class="name">void_catalog_sample.csv</a>
+            <span class="meta">· 128 KB</span>
+            <a class="hash" href="/resources/datasets/B2/checksums.txt">SHA-256</a>
+        </div>
+    </div>
+    <p class="muted">Last updated: <time datetime="2025-08-28">2025-08-28</time></p>
+
+    <h5>Preview (CSV)</h5>
+    <p class="muted">First 5 rows from a tiny sample file.</p>
+    <div class="table-scroll" data-sample-url="/resources/datasets/samples/sample_voids.csv" data-max-cols="10" role="region" aria-label="B2 sample table" tabindex="0">
+        <em>Loading preview…</em>
+    </div>
+
+    <h5>FAIR artefacts (status)</h5>
+    <p class="fair-note">We’re progressively adding the artefacts below; items marked “Coming soon” will appear in the next releases.</p>
+    
+                <ul class="fair-checklist">
+              <li class="fair-item" data-status="soon">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11.013 11.013 0 0 0 12 1Zm1 11V6h-2v8h7v-2Z"/></svg></span>
+                <span class="name">Metadata record</span> <span class="sep">·</span>
+                <a href="/resources/datasets/B1/metadata.json">metadata.json</a>
+                <span class="state"></span>
+              </li>
+
+              <li class="fair-item" data-status="soon">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h10v2H4z"/></svg></span>
+                <span class="name">README</span> <span class="sep">·</span>
+                <a href="/resources/datasets/B1/README.md">README.md</a>
+                <span class="state"></span>
+              </li>
+
+              <li class="fair-item" data-status="soon">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h10v2H3z"/></svg></span>
+                <span class="name">Data dictionary</span> <span class="sep">·</span>
+                <a href="/resources/datasets/B1/dictionary.csv">dictionary.csv</a>
+                <span class="state"></span>
+              </li>
+
+              <li class="fair-item" data-status="soon">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 2 9l10 6 10-6-10-6Zm0 8L2 17l10 6 10-6-10-6Z"/></svg></span>
+                <span class="name">Provenance &amp; methods</span> <span class="sep">·</span>
+                <a href="/resources/datasets/B1/provenance.md">provenance.md</a>
+                <span class="state"></span>
+              </li>
+
+              <li class="fair-item" data-status="soon">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 20h12v-2H6v2ZM8 2h8l1 4H7l1-4Zm-1 6h10l-1.5 9h-7L7 8Z"/></svg></span>
+                <span class="name">Licensing &amp; citation</span> <span class="sep">·</span>
+                <a href="/resources/datasets/B1/LICENSE">LICENCE</a> · <a href="/resources/datasets/B1/citation.txt">citation.txt</a>
+                <span class="state"></span>
+              </li>
+
+              <li class="fair-item" data-status="soon">
+                <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg></span>
+                <span class="name">Supplementary materials</span> <span class="sep">·</span>
+                <a href="/resources/datasets/B1/supplements/">notebooks, diagrams, scripts</a>
+                <span class="state"></span>
+              </li>
+            </ul>
+      </article>
+
       </section>
 
-      <!-- Category C -->
+      <!-- Category C
       <section id="C" class="category-band band-c" aria-labelledby="C-heading">
         <h3 id="C-heading">C. GenAI Simulator</h3>
 
@@ -455,7 +526,7 @@
 
       </section>
 
-    </section>
+    </section> -->
 
 
     <!-- Source Code -->
@@ -469,7 +540,7 @@
       <article class="repo" data-status="wip" aria-labelledby="code-core-heading">
       <!-- Allowed values for data-status: private, public, wip, frozen, archived -->
         <div class="repo-head">
-          <h3 id="code-core-heading" class="repo-title">ASTRAI Core Repository</h3>
+          <h3 id="code-core-heading" class="repo-title">DeepCosmoNet Core Repository</h3>
           <span class="repo-state" aria-live="polite"></span>
         </div>
 
@@ -486,8 +557,8 @@
           <a class="btn btn-secondary" href="#" aria-disabled="true">Download ZIP</a>
           -->
           <!-- with links, just placeholder -->
-            <a class="btn" href="https://github.com/koexai/ASTRAI.git" target="_blank" rel="noopener">View on GitHub</a>
-            <a class="btn btn-secondary" href="https://github.com/koexai/ASTRAI/archive/refs/heads/main.zip">Download ZIP</a>
+            <a class="btn" href="https://github.com/koexai/DeepCosmoNet.git" target="_blank" rel="noopener">View on GitHub</a>
+            <a class="btn btn-secondary" href="https://github.com/koexai/DeepCosmoNet/archive/refs/heads/main.zip">Download ZIP</a>
         </p>
 
         <!-- Once the repo is public you can: (1) remove this section (2) convert it to a Contents summary, with links to real folders/files in Github-->
@@ -639,7 +710,7 @@
     <section id="licence-citation" aria-labelledby="licence-heading">
       <h2 id="licence-heading">Licence &amp; Citation</h2>
         <p>
-          To support ethical reuse and proper attribution, ASTRAI provides default licensing and citation templates for datasets and software.
+          To support ethical reuse and proper attribution, DeepCosmoNet provides default licensing and citation templates for datasets and software.
           <strong>Important:</strong> if a dataset or repository includes its own <code>LICENSE</code>, <code>citation.txt</code>, or DOI,
           that local file <em>overrides the defaults</em> below. Always prefer the per-item files when present.
         </p>
@@ -658,16 +729,16 @@
         </p>
 
         <h4>Recommended dataset citation (plain text)</h4>
-        <pre class="cite">ASTRAI Project (2025). ASTRAI Light Curves — Physical models (4-parameters), v0.1.
-Koexai. URL: https://astrai.koexai.com/resources/  Licence: CC BY 4.0.</pre>
+        <pre class="cite">DeepCosmoNet Project (2025). Deep Learning for cosmic web Analysis, v0.1.
+Koexai. URL: https://deepcosmonet.koexai.com/resources/  Licence: CC BY 4.0.</pre>
 
         <h4>Dataset BibTeX (template)</h4>
-        <pre class="cite">@dataset{astrai_A1_v0_1_2025,
-      author  = {ASTRAI Project},
-      title   = {ASTRAI Light Curves — Physical models (4-parameters)},
+        <pre class="cite">@dataset{deepcosmonet_A1_v0_1_2025,
+      author  = {DeepCosmoNet Project},
+      title   = {DeepCosmoNet Segmentation Pipeline},
       year    = {2025},
       version = {0.1},
-      url     = {https://astrai.koexai.com/resources/},
+      url     = {https://deepcosmonet.koexai.com/resources/},
       license = {CC BY 4.0},
       note    = {Replace with DOI when available}
     }</pre>
@@ -683,16 +754,16 @@ Koexai. URL: https://astrai.koexai.com/resources/  Licence: CC BY 4.0.</pre>
         </p>
 
         <h4>Recommended software citation (plain text)</h4>
-        <pre class="cite">ASTRAI Project (2025). ASTRAI Core (v0.1) — Generative models and characterisation tools.
-Source code. URL: https://astrai.koexai.com/resources/  Licence: MIT.</pre>
+        <pre class="cite">DeepCosmoNet Project (2025). DeepCosmoNet Core (v0.1) — Deep Learning for cosmic web Analysis.
+Source code. URL: https://deepcosmonet.koexai.com/resources/  Licence: MIT.</pre>
 
         <h4>Software BibTeX (template)</h4>
-        <pre class="cite">@software{astrai_core_v0_1_2025,
-      author  = {ASTRAI Project},
-      title   = {ASTRAI Core},
+        <pre class="cite">@software{deepcosmonet_core_v0_1_2025,
+      author  = {DeepCosmoNet Project},
+      title   = {DeepCosmoNet Core},
       year    = {2025},
       version = {0.1},
-      url     = {https://astrai.koexai.com/resources/},
+      url     = {https://deepcosmonet.koexai.com/resources/},
       license = {MIT},
       note    = {Replace with repository URL and tag when public}
     }</pre>

@@ -689,7 +689,7 @@ window.addEventListener('DOMContentLoaded', function () {
       el.outerHTML = `
         <footer class="site-footer">
           <div class="container">
-            <p>© 2025 ASTRAI — Site by <a href="https://koexai.com" rel="external">Koexai srl</a></p>
+            <p>© 2025 DeepCosmoNet — Site by <a href="https://koexai.com" rel="external">Koexai srl</a></p>
           </div>
         </footer>`;
     }
