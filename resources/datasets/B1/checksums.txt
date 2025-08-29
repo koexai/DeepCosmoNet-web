@@ -1,6 +1,1 @@
-# ASTRAI — Dataset B1 checksums (placeholder)
-# Final SHA-256 checksums will be published with the v0.1 release.
-# Format: <sha256><space><space><filename>
-# Example:
-# d2b2c55a...  observations.npy
-
+04DCF68111415CF8824953A1E8A6DA3BCBDD7253A1961C8BE0B104108B888B0E catalog_sample.csv
