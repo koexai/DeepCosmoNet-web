@@ -1,0 +1,8 @@
+| Name | Type | Unit | Range/Allowed Values | Description |
+| :--- | :--- | :--- |:--- | :--- |
+| SubhaloID | string | n/a | Format XXX_YYYY | Unique identifier of the subhalo. |
+| SubhaloLen| int64 | n/a | > 0 | Number of particles that make up the subhalo. |
+| SubhaloMass| float64 | Unit Mass | > 0 | Total mass of the subhalo. |
+| x | float64 | kpc | 0 - 1000000 | X-coordinate of the subhalo's centroid. |
+| y | float64 | kpc | 0 - 1000000 | Y-coordinate of the subhalo's centroid. |
+| z | float64 | kpc | 0 - 1000000 | Z-coordinate of the subhalo's centroid. |

@@ -33,7 +33,7 @@
   "structure": {
     "formats": ["CSV"],
     "encoding": "UTF-8",
-    "conventions": "Positions (x, y, z) are in kpc, radii for voids are in mpc. The simulation box spans from 0 to 1,000,000 kpc in each dimension."
+    "conventions": "Positions (x, y, z) are in kpc, radii and centers for voids are in mpc. The simulation box spans from 0 to 1,000,000 kpc in each dimension."
   },
   "citation": {
     "text": "Carbone, C. & Koexai Srl. (2025). Cosmological Data: N-body Simulation Particles, Subhalo, and Void Catalogs (Version 1.0.0). [Repository/Publisher]. [DOI, if available]",
