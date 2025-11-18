@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DeepCosmoNet Resource Hub</title>
   <meta name="description" content="DeepCosmoNet Resource Hub: datasets, source code, publications, and citation/licensing." />
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body class="with-fixed-header resources-page">
     <a class="skip-link" href="#datasets">Skip to content</a>
@@ -27,12 +27,12 @@
 
   <main class="container resources-page">
     <h1>DeepCosmoNet Resource Hub</h1>
-    <p class="lede">
+    <p class="lede" style="text-align:justify">
       Welcome to the DeepCosmoNet Resource Hub. Here you’ll find <strong>datasets</strong> (N-body Simulation Sample, Sub-halo Catalogue, and Void Catalogue),
       <strong>source code</strong>, and <strong>publications</strong> produced by the project. Each release aims to be <em>FAIR</em>—findable,
       accessible, interoperable, and reusable—so you can reproduce results, benchmark your own methods, and build on this work responsibly.
     </p>
-    <p class="muted">
+    <p class="muted" style="text-align:justify">
       <strong>At a glance:</strong> browse the index on the left, open any dataset section for a short overview, file checksums, a tiny CSV preview (first 5 rows), and FAIR artefacts.
       Status chips like “Available”, “Coming soon”, or “External” indicate exactly where we are in the release process.
     </p>
@@ -92,7 +92,7 @@
     <!-- Datasets -->
     <section id="datasets" aria-labelledby="datasets-heading">
       <h2 id="datasets-heading">Datasets</h2>
-        <p>
+        <p style="text-align:justify">
           DeepCosmoNet datasets are grouped into two categories: <strong>N-body Simulation Dataset</strong> (A), and
           <strong>Cosmological structures catalogues</strong> (B), composed of <strong>Sub-halo catalogue</strong> and <strong>Void Catalogue</strong>.
           Each dataset comes with a minimal <em>open sample</em> (CSV, 5 rows) for quick inspection and the full files in compact formats (e.g. <code>.csv</code>) for research use.
@@ -108,17 +108,16 @@
 
         <article id="A1" class="dataset frame" aria-labelledby="A1-heading">
           <h4 id="A1-heading">A1. N-body simulation sample DEMNUni (1 Gpc)</h4>
-            <p><strong>Overview.</strong> DEMNUni simulations are a suite of large-scale N-body cosmological simulations, this is a sample from a simulation with a box side length of 1 Gpc, that investigate the clustering of cosmic structures specifically in the presence of massive neutrinos. The particle data from these simulations typically includes the following columns: 
-x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velocities), and mass.</p>
+            <p style="text-align:justify"><strong>Overview.</strong> DEMNUni simulations are a suite of large-scale N-body cosmological simulations, this is a sample from a simulation with a box side length of 1 Gpc, that investigate the clustering of cosmic structures specifically in the presence of massive neutrinos. The particle data from these simulations typically includes the following columns:  x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velocities), and mass.</p>
             <p class="muted">Intended use: training and validation of our pipeline.</p>
 
           <h5 class="visually-hidden">Primary files</h5>
             <div class="file-strip" aria-label="Primary files">
               <div class="file-item">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
-                <a href="/resources/datasets/samples/sample.csv" download class="name">Sample_DEMNUni (1 Gpc)</a>
+                <a href="../resources/datasets/samples/sample.csv" download class="name">Sample_DEMNUni (1 Gpc)</a>
                 <span class="meta">· 91&nbsp;MB</span>
-                <a class="hash" href="/resources/datasets/A1/checksums.txt">SHA-256</a>
+                <a class="hash" href="../resources/datasets/A1/checksums.txt">SHA-256</a>
               </div>
 
               <!-- <div class="file-item">
@@ -133,7 +132,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
 
           <h5>Preview (CSV)</h5>
           <p class="muted">First 5 rows from a spatial subset of our Dataset; the full subset is available via the .csv download above.</p>
-          <div class="table-scroll" data-sample-url="/resources/datasets/samples/sample.csv" data-max-cols="10" role="region" aria-label="A1 sample curve table" tabindex="0">
+          <div class="table-scroll" data-sample-url="../resources/datasets/samples/sample.csv" data-max-cols="10" role="region" aria-label="A1 sample curve table" tabindex="0">
             <em>Loading preview…</em>
           </div>
           <!-- <p class="muted">First 5 rows from a tiny sample file for parameters; the full dataset is available via the .npy download above.</p>
@@ -150,7 +149,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
                   <svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11.013 11.013 0 0 0 12 1Zm1 11V6h-2v8h7v-2Z"/></svg>
                 </span>
                 <span class="name">Metadata record</span><span class="sep">·</span>
-                <a href="/resources/datasets/A1/metadata.json">metadata.json</a>
+                <a href="../resources/datasets/A1/metadata.json">metadata.json</a>
                 <span class="state"></span>
               </li>
 
@@ -159,7 +158,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
                   <svg viewBox="0 0 24 24"><path d="M4 3h16v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h10v2H4z"/></svg>
                 </span>
                 <span class="name">README</span><span class="sep">·</span>
-                <a href="/resources/datasets/A1/README.md">README.md</a>
+                <a href="../resources/datasets/A1/README.md">README.md</a>
                 <span class="state"></span>
               </li>
 
@@ -168,7 +167,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
                   <svg viewBox="0 0 24 24"><path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h10v2H3z"/></svg>
                 </span>
                 <span class="name">Data dictionary</span><span class="sep">·</span>
-                <a href="/resources/datasets/A1/dictionary.csv">dictionary.csv</a>
+                <a href="../resources/datasets/A1/dictionary.csv">dictionary.csv</a>
                 <span class="state"></span>
               </li>
 
@@ -177,7 +176,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
                   <svg viewBox="0 0 24 24"><path d="M12 3 2 9l10 6 10-6-10-6Zm0 8L2 17l10 6 10-6-10-6Z"/></svg>
                 </span>
                 <span class="name">Provenance &amp; methods</span><span class="sep">·</span>
-                <a href="/resources/datasets/A1/provenance.md">provenance.md</a>
+                <a href="../resources/datasets/A1/provenance.md">provenance.md</a>
                 <span class="state"></span>
               </li>
 
@@ -186,7 +185,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
                   <svg viewBox="0 0 24 24"><path d="M6 20h12v-2H6v2ZM8 2h8l1 4H7l1-4Zm-1 6h10l-1.5 9h-7L7 8Z"/></svg>
                 </span>
                 <span class="name">Licensing &amp; citation</span><span class="sep">·</span>
-                <a href="/resources/datasets/A1/LICENSE">LICENCE</a> · <a href="/resources/datasets/A1/citation.txt">citation.txt</a>
+                <a href="../resources/datasets/A1/LICENSE_CC_BY_40.md">LICENCE</a>  <a href="/resources/datasets/A1/citation.txt">citation.txt</a>
                 <span class="state"></span>
               </li>
 
@@ -195,7 +194,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
                   <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg>
                 </span>
                 <span class="name">Supplementary materials</span><span class="sep">·</span>
-                <a href="/resources/datasets/A1/supplements/">notebooks, diagrams, scripts</a>
+                <a href="../resources/datasets/A1/supplements/">notebooks, diagrams, scripts</a>
                 <span class="state"></span>
               </li>
             </ul>
@@ -303,9 +302,9 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
             <div class="file-strip" aria-label="Primary files">
               <div class="file-item">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
-                <a href="/resources/datasets/samples/catalog_sample.csv" download class="name">catalog_sample.csv</a>
+                <a href="../resources/datasets/samples/catalog_sample.csv" download class="name">catalog_sample.csv</a>
                 <span class="meta">· 314 KB</span>
-                <a class="hash" href="/resources/datasets/B1/checksums.txt">SHA-256</a>
+                <a class="hash" href="../resources/datasets/B1/checksums.txt">SHA-256</a>
               </div>
             </div>
             <p class="muted">Last updated: <time datetime="2025-08-23">2025-08-23</time></p>
@@ -313,7 +312,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
 
           <h5>Preview (CSV)</h5>
           <p class="muted">First 5 rows from a tiny sample file.</p>
-          <div class="table-scroll" data-sample-url="/resources/datasets/samples/catalog_sample.csv" data-max-cols="10" role="region" aria-label="B1 sample table" tabindex="0">
+          <div class="table-scroll" data-sample-url="../resources/datasets/samples/catalog_sample.csv" data-max-cols="10" role="region" aria-label="B1 sample table" tabindex="0">
             <em>Loading preview…</em>
           </div>
 
@@ -324,42 +323,42 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
               <li class="fair-item" data-status="available">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11.013 11.013 0 0 0 12 1Zm1 11V6h-2v8h7v-2Z"/></svg></span>
                 <span class="name">Metadata record</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B1/metadata.json">metadata.json</a>
+                <a href="../resources/datasets/B1/metadata.json">metadata.json</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="external">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h10v2H4z"/></svg></span>
                 <span class="name">README</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B1/README.md">README.md</a>
+                <a href="../resources/datasets/B1/README.md">README.md</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="available">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h10v2H3z"/></svg></span>
                 <span class="name">Data dictionary</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B1/dictionary.csv">dictionary.csv</a>
+                <a href="../resources/datasets/B1/dictionary.csv">dictionary.csv</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="available">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 2 9l10 6 10-6-10-6Zm0 8L2 17l10 6 10-6-10-6Z"/></svg></span>
                 <span class="name">Provenance &amp; methods</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B1/provenance.md">provenance.md</a>
+                <a href="../resources/datasets/B1/provenance.md">provenance.md</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="soon">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 20h12v-2H6v2ZM8 2h8l1 4H7l1-4Zm-1 6h10l-1.5 9h-7L7 8Z"/></svg></span>
                 <span class="name">Licensing &amp; citation</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B1/LICENSE">LICENCE</a> · <a href="/resources/datasets/B1/citation.txt">citation.txt</a>
+                <a href="../resources/datasets/B1/LICENSE_CC_BY_40.md">LICENCE</a> · <a href="/resources/datasets/B1/citation.txt">citation.txt</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="soon">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg></span>
                 <span class="name">Supplementary materials</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B1/supplements/">notebooks, diagrams, scripts</a>
+                <a href="../resources/datasets/B1/supplements/">notebooks, diagrams, scripts</a>
                 <span class="state"></span>
               </li>
             </ul>
@@ -370,23 +369,23 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
         <article id="B2" class="dataset frame" aria-labelledby="B2-heading">
     <h4 id="B2-heading">B2. Void Catalogue</h4>
     
-    <p><strong>Overview.</strong> This catalogue contains cosmic voids identified by our pipeline, which uses a 3D YOLO-like architecture to process voxelized data from the N-body simulation. Each entry includes the center and radius of the spherical voids, with data validated using metrics like spherical Intersection over Union (IoU).</p>
+    <p style="text-align:justify"><strong>Overview.</strong> This catalogue contains cosmic voids identified by our pipeline, which uses a 3D YOLO-like architecture to process voxelized data from the N-body simulation. Each entry includes the center and radius of the spherical voids, with data validated using metrics like spherical Intersection over Union (IoU).</p>
     <p class="muted">Intended use: This resource is essential for studying large-scale cosmic structures and for comparative analysis with other detection methods.</p>
 
     <h5 class="visually-hidden">Primary files</h5>
     <div class="file-strip" aria-label="Primary files">
         <div class="file-item">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20h14v-2H5v2zm7-18-5 5h3v6h4V7h3l-5-5z"/></svg>
-            <a href="/resources/datasets/samples/sample_voids.csv" download class="name">void_catalog_sample.csv</a>
+            <a href="../resources/datasets/samples/sample_voids.csv" download class="name">void_catalog_sample.csv</a>
             <span class="meta">· 144 KB</span>
-            <a class="hash" href="/resources/datasets/B2/checksums.txt">SHA-256</a>
+            <a class="hash" href="../resources/datasets/B2/checksums.txt">SHA-256</a>
         </div>
     </div>
     <p class="muted">Last updated: <time datetime="2025-08-28">2025-08-28</time></p>
 
     <h5>Preview (CSV)</h5>
     <p class="muted">First 5 rows from a tiny sample file.</p>
-    <div class="table-scroll" data-sample-url="/resources/datasets/samples/sample_voids.csv" data-max-cols="10" role="region" aria-label="B2 sample table" tabindex="0">
+    <div class="table-scroll" data-sample-url="../resources/datasets/samples/sample_voids.csv" data-max-cols="10" role="region" aria-label="B2 sample table" tabindex="0">
         <em>Loading preview…</em>
     </div>
 
@@ -397,42 +396,42 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
               <li class="fair-item" data-status="available">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11.013 11.013 0 0 0 12 1Zm1 11V6h-2v8h7v-2Z"/></svg></span>
                 <span class="name">Metadata record</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B2/metadata.json">metadata.json</a>
+                <a href="../resources/datasets/B2/metadata.json">metadata.json</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="external">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16v2H4zm0 4h16v2H4zm0 4h10v2H4zm0 4h10v2H4z"/></svg></span>
                 <span class="name">README</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B2/README.md">README.md</a>
+                <a href="../resources/datasets/B2/README.md">README.md</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="available">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h10v2H3z"/></svg></span>
                 <span class="name">Data dictionary</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B2/dictionary.csv">dictionary.csv</a>
+                <a href="../resources/datasets/B2/dictionary.csv">dictionary.csv</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="available">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 2 9l10 6 10-6-10-6Zm0 8L2 17l10 6 10-6-10-6Z"/></svg></span>
                 <span class="name">Provenance &amp; methods</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B2/provenance.md">provenance.md</a>
+                <a href="../resources/datasets/B2/provenance.md">provenance.md</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="soon">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 20h12v-2H6v2ZM8 2h8l1 4H7l1-4Zm-1 6h10l-1.5 9h-7L7 8Z"/></svg></span>
                 <span class="name">Licensing &amp; citation</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B2/LICENSE">LICENCE</a> · <a href="/resources/datasets/B1/citation.txt">citation.txt</a>
+                <a href="../resources/datasets/B2/LICENSE_CC_BY_40.md">LICENCE</a> · <a href="/resources/datasets/B1/citation.txt">citation.txt</a>
                 <span class="state"></span>
               </li>
 
               <li class="fair-item" data-status="soon">
                 <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v2H4zm0 6h16v2H4zm0 6h10v2H4z"/></svg></span>
                 <span class="name">Supplementary materials</span> <span class="sep">·</span>
-                <a href="/resources/datasets/B2/supplements/">notebooks, diagrams, scripts</a>
+                <a href="../resources/datasets/B2/supplements/">notebooks, diagrams, scripts</a>
                 <span class="state"></span>
               </li>
             </ul>
@@ -598,38 +597,46 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
         <ul class="pub-list">
           <li class="pub-item" data-kind="articles" data-status="in-prep">
             <div class="pub-head">
-              <span class="pub-title"><strong>Paper #1 (title TBC)</strong></span>
-              <span class="pub-state" aria-label="Status: in preparation"></span>
+              <span class="pub-title"><strong>HALOS: Hierarchical Aggregation Learning for Overdensity Search</strong></span>
+              <span class="pub-state" aria-label="Status: in review"></span>
             </div>
             <ul class="pub-meta">
-              <li><span class="label">Status:</span> In preparation</li>
-              <li><span class="label">Type:</span> Journal article</li>
+              <li><span class="label">Status:</span> In review</li>
+              <li><span class="label">Journal:</span> Astronomy & Computing</li>
             </ul>
             <p class="pub-links">
-              <a href="/resources/publications/articles/paper1_abstract.md">Abstract</a>
+              <a href="..resources/publications/articles/paper1_abstract.md">Abstract</a>
               <span aria-hidden="true">·</span>
               <a href="#" aria-disabled="true">Preprint (coming soon)</a>
             </p>
             <details class="pub-more">
               <summary>Show short note</summary>
               <div class="pub-note">
-                Scope: early results on physical-model light curves; baselines &amp; GenAI augmentation plan.
+                Scope: instance segnmentation on cosmic web classes.
               </div>
             </details>
           </li>
 
-          <li class="pub-item" data-kind="articles" data-status="planned">
+          <li class="pub-item" data-kind="articles" data-status="in-prep">
             <div class="pub-head">
-              <span class="pub-title"><strong>Paper #2 (title TBC)</strong></span>
-              <span class="pub-state" aria-label="Status: planned"></span>
+              <span class="pub-title"><strong>3D YOLO-like Detector for Cosmic Voids: A Multi-Scale Deep Learning Approach to Large-Scale Underdense Structures</strong></span>
+              <span class="pub-state" aria-label="Status: In revew"></span>
             </div>
             <ul class="pub-meta">
-              <li><span class="label">Status:</span> Planned submission</li>
-              <li><span class="label">Type:</span> Conference paper</li>
+              <li><span class="label">Status:</span> In revew</li>
+              <li><span class="label">Journal:</span> Astronomy & Computing</li>
             </ul>
             <p class="pub-links">
-              <a href="/resources/publications/articles/paper2_outline.md">Outline</a>
+              <a href="../resources/publications/articles/paper2_abstract.md">Abstract</a>
+              <span aria-hidden="true">·</span>
+              <a href="#" aria-disabled="true">Preprint (coming soon)</a>
             </p>
+            <details class="pub-more">
+              <summary>Show short note</summary>
+              <div class="pub-note">
+                Scope: instance segnmentation on cosmic web classes.
+              </div>
+            </details>
           </li>
         </ul>
       </section>
@@ -640,11 +647,11 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
         <ul class="pub-list">
           <li class="pub-item" data-kind="diagrams" data-status="wip">
             <div class="pub-head">
-              <span class="pub-title"><a href="/resources/diagrams/dl_network_architecture_v1.png">DL network architecture (v1)</a></span>
+              <span class="pub-title"><a href="../resources/diagrams/dl_network_architecture_v1.png" target="_blank" rel="noopener">DL network architecture (v1)</a></span>
               <span class="pub-state" aria-label="Status: published"></span>
             </div>
             <ul class="pub-meta">
-              <li><span class="label">Format:</span> PNG diagram</li>
+              <li><span class="label">Format:</span> PDF</li>
               <li><span class="label">Version:</span> v1</li>
             </ul>
             <p class="muted">Blocks and data flow of the DL model.</p>
@@ -652,7 +659,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
 
           <li class="pub-item" data-kind="diagrams" data-status="wip">
             <div class="pub-head">
-              <span class="pub-title"><a href="/resources/diagrams/training_workflow_v1.pdf" target="_blank" rel="noopener">Training workflow (v1, PDF)</a></span>
+              <span class="pub-title"><a href="../resources/diagrams/training_workflow_v1.pdf" target="_blank" rel="noopener">Training workflow (v1, PDF)</a></span>
               <span class="pub-state" aria-label="Status: published"></span>
             </div>
             <ul class="pub-meta">
@@ -664,12 +671,12 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
 
           <li class="pub-item" data-kind="diagrams" data-status="wip">
             <div class="pub-head">
-              <span class="pub-title"><a href="/resources/diagrams/generation_pipeline_note.md">Segmentation pipeline</a></span>
+              <span class="pub-title"><a href="../resources/diagrams/generation_pipeline_note.md" target="_blank" rel="noopener">Segmentation pipeline</a></span>
               <span class="pub-state" aria-label="Status: work in progress"></span>
             </div>
             <ul class="pub-meta">
-              <li><span class="label">Format:</span> Markdown note</li>
-              <li><span class="label">Status:</span> Work in progress</li>
+              <li><span class="label">Format:</span> PDF</li>
+              <li><span class="label">Version:</span>v1</li>
             </ul>
           </li>
         </ul>
@@ -681,7 +688,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
         <ul class="pub-list">
           <li class="pub-item" data-kind="findings" data-status="wip">
             <div class="pub-head">
-              <span class="pub-title"><a href="/resources/findings/orphan_afterglow_candidates_v1.md">..</a></span>
+              <span class="pub-title"><a href="../resources/findings/orphan_afterglow_candidates_v1.md">..</a></span>
               <span class="pub-state" aria-label="Status: published"></span>
             </div>
             <ul class="pub-meta">
@@ -693,7 +700,7 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
 
           <li class="pub-item" data-kind="findings" data-status="wip">
             <div class="pub-head">
-              <span class="pub-title"><a href="/resources/findings/benchmark_snapshot_v1.md">Benchmark snapshot — early metrics</a></span>
+              <span class="pub-title"><a href="../resources/findings/benchmark_snapshot_v1.md">Benchmark snapshot — early metrics</a></span>
               <span class="pub-state" aria-label="Status: work in progress"></span>
             </div>
             <ul class="pub-meta">
