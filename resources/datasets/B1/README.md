@@ -1,6 +1,3 @@
-Based on the CSV file provided earlier and the new research paper "3D YOLO-like Detector for Cosmic Voids," here is a comprehensive `README.md`. This document integrates the specific dataset statistics with the theoretical framework, architecture, and performance metrics detailed in the paper.
-
-````markdown
 # 3D YOLO-like Detector for Cosmic Voids: Dataset and Model Documentation
 
 ## 1. Project Overview
