@@ -462,7 +462,7 @@ For bug reports and feature requests, use [GitHub Issues](https://github.com/koe
 
 - **Email**: info@koexai.com
 - **Website**: [www.koexai.com](https://www.koexai.com)
-- **GitHub**: [@koexai](https://github.com/koexai)
+- **LinkedIn**:[https://www.linkedin.com/company/koexai/]
 
 ## Future Directions
 
@@ -491,5 +491,3 @@ For bug reports and feature requests, use [GitHub Issues](https://github.com/koe
 - DEMNUni simulations: [Link to data]
 - Pylians void catalogues
 - Example training/validation splits
-
-**Note**: This is an active research project. Performance metrics and architecture details may be updated as the work progresses. We encourage users to validate results for their specific applications and provide feedback through GitHub issues.

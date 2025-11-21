@@ -139,7 +139,7 @@ For full N-body runs, compile Gadget-3 with neutrino patches and run with provid
 
 ## Data Access
 
-- **DEMNUni Simulations**: Pre-computed gravitational potential snapshots and lightcone catalogs are available upon request from the authors or via the DEMNUni collaboration data portal (check [DEMNUni project page](https://www.demnu.org/) for updates).
+- **DEMNUni Simulations**: Pre-computed gravitational potential snapshots and lightcone catalogs are available upon request from the authors).
 - **Sample Maps**: Reduced-resolution sample ISW/RS and lensing maps (nside=256) are included in `./data/samples/`.
 - **Datasets**: No public datasets are directly linked in the paper; simulations use standard Planck-like cosmologies.
 
@@ -168,9 +168,6 @@ Contributions are welcome! Please fork the repository and submit pull requests f
 
 This code is released under the MIT License. See [LICENSE](LICENSE) for details. The DEMNUni simulation data may have separate usage agreements—check with the collaboration.
 
-## Acknowledgments
-
-This work is based on the DEMNUni simulations, funded by [relevant grants]. We thank the CAMB and HEALPix teams for public tools. Computations were performed on [e.g., PRACE, FERMI] clusters.
 
 ## Citation
 

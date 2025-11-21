@@ -329,18 +329,6 @@ For bug reports and feature requests, please use the [GitHub Issues](https://git
 ## Contact
 
 For questions and support:
-- Email: info@koexai.com
-- Website: [www.koexai.com](https://www.koexai.com)
-- GitHub: [@koexai](https://github.com/koexai)
-
-## Future Directions
-
-- Testing transferability across different simulation suites
-- Support for hydrodynamical simulations
-- Parallelization of CPU-bound bottlenecks
-- Extension to alternative cosmological models
-- Real-time analysis capabilities
-
----
-
-**Note**: This is a research code under active development. We encourage users to validate results against established methods for their specific use cases.
+- **Email**: info@koexai.com
+- **Website**: [www.koexai.com](https://www.koexai.com)
+- **LinkedIn**:[https://www.linkedin.com/company/koexai/]
