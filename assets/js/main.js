@@ -454,6 +454,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     // === Align the TOC panel with the first content heading (desktop only) ===
+    /*
     if (document.body.classList.contains('resources-page')) {
       (function alignTocToFirstHeading() {
         const mq   = window.matchMedia('(max-width: 980px)'); // keep in sync with CSS
@@ -486,6 +487,7 @@ window.addEventListener('DOMContentLoaded', function () {
         apply();
       })();
     }
+    */
 
     /* ========= FAIR checklist: dynamic chip text from data-status (A11Y-friendly) ========= */
     (function () {
