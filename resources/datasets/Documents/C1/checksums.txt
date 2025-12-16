@@ -1,0 +1,7 @@
+# ASTRAI — Dataset C1 checksums (placeholder)
+# Final SHA-256 checksums will be published with the v0.1 release.
+# Format: <sha256><space><space><filename>
+# Example:
+# d2b2c55a...  synthetic_series.npy
+# 8f42a9bd...  synthetic_labels.npy
+
