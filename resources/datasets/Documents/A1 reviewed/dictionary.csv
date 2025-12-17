@@ -1,0 +1,10 @@
+| Name | Type | Unit | Range/Allowed Values | Description |
+| :--- | :--- | :--- |:--- | :--- |
+| x | float64 | kpc | 0 - 1000000 | Positional X-coordinate of the particle. |
+| y | float64 | kpc | 0 - 1000000 | Positional Y-coordinate of the particle. |
+| z | float64 | kpc | 0 - 1000000 | Positional Z-coordinate of the particle. |
+| iord| float64 | n/a | > 0 | Unique identifier (ID) for each particle. |
+| velx| float64 | km/s | n/a | X-component of the particle's velocity. |
+| vely| float64 | km/s | n/a | Y-component of the particle's velocity. |
+| velz| float64 | km/s | n/a | Z-component of the particle's velocity. |
+| mass| float64 | Unit Mass | 8.27 | Unitary mass of the particle. |

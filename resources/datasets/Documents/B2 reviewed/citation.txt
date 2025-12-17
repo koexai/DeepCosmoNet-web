@@ -1,0 +1,13 @@
+If you use DeepCosmoNet in your research, please cite both the software and our submitted paper:
+
+[1] Puglisi, G. (2025). 3D YOLO-like Detector for Cosmic Voids: A Multi-Scale Deep Learning Approach to Large-Scale Underdense Structures 
+    Submitted to Journal, under review.
+
+BibTeX Format:
+@article{Puglisi2025deepcosmonet,
+  title = {3D YOLO-like Detector for Cosmic Voids: A Multi-Scale Deep Learning Approach to Large-Scale Underdense Structures},
+  author = {Puglisi,G.},
+  year = {2025},
+  journal = {Submitted to Journal},
+  note = {Under review}
+}
