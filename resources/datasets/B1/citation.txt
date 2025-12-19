@@ -1,0 +1,13 @@
+If you use DeepCosmoNet in your research, please cite both the software and our submitted paper:
+
+[1] Spampinato, F. (2025). HALOS: Hierarchical Aggregation Learning for Overdensity Search 
+    Submitted to Journal, under review.
+
+BibTeX Format:
+@article{Spampinato2025deepcosmonet,
+  title = {HALOS: Hierarchical Aggregation Learning for Overdensity Search},
+  author = {Spampinato, Fabio},
+  year = {2025},
+  journal = {Submitted to Journal},
+  note = {Under review}
+}

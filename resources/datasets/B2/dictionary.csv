@@ -1,0 +1,6 @@
+| Name | Type | Unit | Range/Allowed Values | Description |
+| :--- | :--- | :--- |:--- | :--- |
+| x | float64 | kpc | 0 - 1000000 | X-coordinate of the void's center. |
+| y | float64 | kpc | 0 - 1000000 | Y-coordinate of the void's center. |
+| z | float64 | kpc | 0 - 1000000 | Z-coordinate of the void's center. |
+| radius| float64 | kpc | > 0 | Radius of the identified void. |

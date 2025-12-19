@@ -1,0 +1,42 @@
+{
+  "title": "Cosmological Data: N-body Simulation Particles, Subhalo, and Void Catalogs",
+  "creators": [
+    {
+      "name": "Prof. Carmelita Carbone",
+      "affiliation": "University of Milan",
+      "role": "Principal Investigator (N-body Simulation)"
+    },
+    {
+      "name": "Koexai Srl",
+      "affiliation": "Koexai Srl",
+      "role": "Producer (Subhalo and Void Catalogs)"
+    }
+  ],
+  "version": "1.0.0",
+  "dates": {
+    "created": "2024-01-01/2025-12-31",
+    "released": "2025-08-29"
+  },
+  "abstract": "This dataset provides a sample from a 1 Gpc DEMNUni type N-body cosmological simulation, including particle positions, velocities, and mass. It also includes derived data products from the DeepCosmoNet project: a catalog of identified subhalos with their properties (mass, particle count, centroid) and a complementary catalog of cosmic voids (center position and radius).",
+  "keywords": [
+    "cosmology",
+    "n-body simulation",
+    "subhalos",
+    "cosmic voids",
+    "large-scale structure",
+    "DeepCosmoNet"
+  ],
+  "provenance": {
+    "sources": "N-body simulation (DEMNUni, 1 Gpc) by Prof. C. Carbone (UniMi, 2024).",
+    "processing": "Subhalo and void identification algorithms applied by Koexai Srl (2025) for the DeepCosmoNet project."
+  },
+  "structure": {
+    "formats": ["CSV"],
+    "encoding": "UTF-8",
+    "conventions": "Positions (x, y, z) are in kpc, radii and centers for voids are in mpc. The simulation box spans from 0 to 1,000,000 kpc in each dimension."
+  },
+  "citation": {
+    "text": "Carbone, C. & Koexai Srl. (2025). Cosmological Data: N-body Simulation Particles, Subhalo, and Void Catalogs (Version 1.0.0). [Repository/Publisher]. [DOI, if available]",
+    "bibtex": "@dataset{carbone_koexai_2025,\n  author    = {Carbone, Carmelita and Koexai Srl},\n  title     = {Cosmological Data: N-body Simulation Particles, Subhalo, and Void Catalogs},\n  year      = {2025},\n  version   = {1.0.0},\n  publisher = {[Repository/Publisher]},\n  doi       = {[DOI, if available]}\n}"
+  }
+}
