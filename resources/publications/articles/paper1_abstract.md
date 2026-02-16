@@ -1,14 +1,13 @@
 The identification of gravitationally bound substructures (subhalos) within cosmological simulations is a cornerstone for under-
-standing galaxy formation and evolution. Traditional algorithms, while accurate, are often computationally intensive, posing a sig-
-nificant bottleneck for the analysis of next-generation cosmological simulations and limiting the feasibility of on-the-fly processing.
-In this work, we introduce HALOS (Hierarchical Aggregation Learning for Overdensity Search), a novel and highly efficient deep
-learning pipeline for subhalo identification in 3D point clouds. Our method employs a multi-stage approach that decouples particle
-classification from instance segmentation. First, we engineer a set of physically motivated features for each particle. Second, a
-multi-layer perceptron simultaneously performs two tasks: (i) a semantic segmentation to classify particles as either bound to a
-subhalo or part of the unbound background, and (ii) a regression to predict the 3D coordinates of the parent subhalo’s centroid for
-each bound particle. Finally, the HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise) algorithm
-performs a density-based clustering exclusively on the pre-filtered set of bound particles, significantly reducing computational
-complexity. We train and validate our model using catalogues generated from cosmological N-body simulations by the SUBFIND
-algorithm. HALOS achieves a semantic classification accuracy of 95%, an Adjusted Rand Index for instance segmentation exceeding
-90%, and an overall Completeness of 98.5%, demonstrating a close alignment with SUBFIND, while reducing computational time
-by ≈ 10×.
+standing galaxy formation and evolution. Traditional algorithms, while accurate, are often computationally intensive, posing a
+significant bottleneck for the analysis of next-generation cosmological simulations and limiting the feasibility of on-the-fly pro-
+cessing. In this work, we introduce HALOS (Hierarchical Aggregation Learning for Overdensity Search), a novel deep learning
+pipeline for subhalo identification in 3D point clouds. Our method employs a multi-stage approach that decouples particle classifi-
+cation from instance segmentation. First, we engineer a set of physically motivated features for each particle. Second, a multi-layer
+perceptron simultaneously performs two tasks: (i) a semantic segmentation to classify particles as either bound to a subhalo or
+part of the unbound background, and (ii) a regression to predict the 3D coordinates of the parent subhalo centroid for each bound
+particle. Finally, the HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise) algorithm performs a
+density-based clustering exclusively on the pre-filtered set of bound particles, significantly reducing computational complexity. We
+train and validate our model using catalogues generated from cosmological N-body simulations by the SUBFIND algorithm. HALOS
+achieves a semantic classification accuracy of 95%, an Adjusted Rand Index for instance segmentation > 90%, and an overall
+Completeness of 90%, demonstrating a close alignment with SUBFIND, while reducing computational time by a factor of ∼ 16.
