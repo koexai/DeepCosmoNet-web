@@ -848,22 +848,34 @@ x, y, z (positions), iord (a unique particle identifier), velx, vely, velz (velo
           <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Read the licence</a>.
         </p>
 
-        <h4>Recommended dataset citation (plain text)</h4>
-        <pre class="cite">DeepCosmoNet Project (2025). Deep Learning for cosmic web Analysis, v0.1.
-Koexai. URL: https://deepcosmonet.koexai.com/resources/  Licence: CC BY 4.0.</pre>
+         <h4>Recommended paper Halos citation (plain text)</h4>
+        <pre class="cite">Fabio Spampinato, Vincenzo Del Zoppo, Giuseppe Puglisi, Alessio Mezzina, Marco Cataldo, Jean Marc Christille, Matteo Calabrese, Luca Naso, Carmelita Carbone,
+        HALOS: Hierarchical Aggregation Learning for Overdensity Search,
+        Astronomy and Computing,
+        Volume 56,
+        2026,
+        101114,
+        ISSN 2213-1337,
+        https://doi.org/10.1016/j.ascom.2026.101114.
+        (https://www.sciencedirect.com/science/article/pii/S2213133726000569)
+        Abstract: The identification of gravitationally bound substructures (subhalos) within cosmological simulations is a cornerstone for understanding galaxy formation and evolution. Traditional algorithms, while accurate, are often computationally intensive, posing a significant bottleneck for the analysis of next-generation cosmological simulations and limiting the feasibility of on-the-fly processing. In this work, we introduce HALOS (Hierarchical Aggregation Learning for Overdensity Search), a novel deep learning pipeline for subhalo identification in 3D point clouds. Our method employs a multi-stage approach that decouples particle classification from instance segmentation. First, we engineer a set of physically motivated features for each particle. Second, a multi-layer perceptron simultaneously performs two tasks: (i) a semantic segmentation to classify particles as either bound to a subhalo or part of the unbound background, and (ii) a regression to predict the 3D coordinates of the parent subhalo centroid for each bound particle. Finally, the HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise) algorithm performs a density-based clustering exclusively on the pre-filtered set of bound particles, significantly reducing computational complexity. We train and validate our model using catalogues generated from cosmological N-body simulations by the SUBFIND algorithm. HALOS achieves a semantic classification accuracy of 95%, an Adjusted Rand Index for instance segmentation >90%, and an overall Completeness of 90%, demonstrating a close alignment with SUBFIND, while reducing computational time by a factor of ∼ 16.
+        Keywords: Subhalos; Cosmology; Deep learning; Clustering; Particle segmentation; SUBFIND; Halo-finders; 3D point clouds
+        dataURL: https://deepcosmonet.koexai.com/resources/  Licence: CC BY 4.0.</pre>
 
-        <h4>Dataset BibTeX (template)</h4>
-        <pre class="cite">@dataset{deepcosmonet_A1_v0_1_2025,
-      author  = {Koexai Srl},
-      title   = {DeepCosmoNet Segmentation Pipeline},
-      year    = {2025},
-      version = {0.1},
-      url     = {https://deepcosmonet.koexai.com/resources/},
-      license = {CC BY 4.0},
-      note    = {Replace with DOI when available}
-    }</pre>
-        <p class="muted">Tip: if a dataset provides its own <code>citation.txt</code> or DOI, please use that instead of the template above.</p>
-      </section>
+        <h4>BibTeX Paper Halos(template)</h4>
+        <pre class="cite">@article{SPAMPINATO2026101114,
+          title = {HALOS: Hierarchical Aggregation Learning for Overdensity Search},
+          journal = {Astronomy and Computing},
+          volume = {56},
+          pages = {101114},
+          year = {2026},
+          issn = {2213-1337},
+          doi = {https://doi.org/10.1016/j.ascom.2026.101114},
+          url = {https://www.sciencedirect.com/science/article/pii/S2213133726000569},
+          author = {Fabio Spampinato and Vincenzo {Del Zoppo} and Giuseppe Puglisi and Alessio Mezzina and Marco Cataldo and Jean Marc Christille and Matteo Calabrese and Luca Naso and Carmelita Carbone},
+          keywords = {Subhalos, Cosmology, Deep learning, Clustering, Particle segmentation, SUBFIND, Halo-finders, 3D point clouds},
+          abstract = {The identification of gravitationally bound substructures (subhalos) within cosmological simulations is a cornerstone for understanding galaxy formation and evolution. Traditional algorithms, while accurate, are often computationally intensive, posing a significant bottleneck for the analysis of next-generation cosmological simulations and limiting the feasibility of on-the-fly processing. In this work, we introduce HALOS (Hierarchical Aggregation Learning for Overdensity Search), a novel deep learning pipeline for subhalo identification in 3D point clouds. Our method employs a multi-stage approach that decouples particle classification from instance segmentation. First, we engineer a set of physically motivated features for each particle. Second, a multi-layer perceptron simultaneously performs two tasks: (i) a semantic segmentation to classify particles as either bound to a subhalo or part of the unbound background, and (ii) a regression to predict the 3D coordinates of the parent subhalo centroid for each bound particle. Finally, the HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise) algorithm performs a density-based clustering exclusively on the pre-filtered set of bound particles, significantly reducing computational complexity. We train and validate our model using catalogues generated from cosmological N-body simulations by the SUBFIND algorithm. HALOS achieves a semantic classification accuracy of 95%, an Adjusted Rand Index for instance segmentation >90%, and an overall Completeness of 90%, demonstrating a close alignment with SUBFIND, while reducing computational time by a factor of ∼ 16.}
+          }</pre>
 
       <!-- Software -->
       <section id="licence-software" aria-labelledby="licence-software-heading">
